@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #252525;
+}
+body::selection {
+  background-color: rgb(139, 1, 1);
+  color: #fff;
+}
+.container {
+  padding: 3em 0;
+  width: 100%;
+  height: 100vh;
+}
+.header {
+  padding: 0 2em;
+  width: 100%;
+  height: 80px;
+  background: rgb(139, 1, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+.header h1 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+label {
+  color: #fff;
+}
+input {
+  background: transparent;
+  border: 1px solid #fff;
+  height: 40px;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  outline: none;
+  color: #fff;
+  padding: 0 1em;
+}
+input::placeholder {
+  color: #7e7e7e;
+  font-size: 0.8em;
+  font-weight: 300;
+  padding: 0 1em;
+}
+.form-control::placeholder {
+  color: #ffff;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0 1em;
+}
+textarea {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  outline: none;
+  color: #fff;
+  padding: 1em;
+}
+textarea::-webkit-scrollbar {
+  width: 1em;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(139, 1, 1);
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+.my-table {
+  background-color: transparent !important;
+  border: none !important;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-table th {
+  background-color: transparent !important;
+  color: white !important;
+  text-align: center;
+  padding: 12px !important;
+  font-size: 16px;
+}
+.my-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px !important;
+  font-size: 15px;
+  border-top: 1px solid #dee2e6;
+}
+.my-table tbody tr {
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+.my-table tbody tr {
+  background-color: transparent !important;
+}
+
+.my-table tbody td {
+  background: transparent !important;
+  color: #fff !important;
+  font-size: 15px !important;
+  padding: 10px !important;
+}
+.my-table tbody .update i {
+  cursor: pointer;
+  font-size: 1.3em;
+  color: #1771f8;
+}
+.my-table tbody .delete i {
+  cursor: pointer;
+  font-size: 1.3em;
+  color: rgb(139, 1, 1);
+}
+.my-table tbody .update i:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.my-table tbody .delete i:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+@media (max-width: 992px) {
+  .header {
+    padding: 0 1.4em;
+    width: 100%;
+    height: 60px;
+    background: rgb(139, 1, 1);
+    display: flex;
+    align-items: center;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+  }
+  .header h1 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

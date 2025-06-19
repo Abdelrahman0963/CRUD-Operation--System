@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CRUD Operation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Crud Opration System ...!</h1>
+      </div>
+      <div class="crud-form py-4">
+        <div class="row g-3">
+          <div class="col-md-6 d-flex flex-column">
+            <label for="productName">Product Name</label>
+            <input
+              type="text"
+              id="productName"
+              placeholder="Enter Product Name"
+              class="productName"
+            />
+          </div>
+          <div class="col-md-6 d-flex flex-column">
+            <label for="ProductCategory">Product Category</label>
+            <input
+              type="text"
+              id="ProductCategory"
+              placeholder="Enter Product Category"
+              class="ProductCategory"
+            />
+          </div>
+          <div class="col-md-4 d-flex flex-column">
+            <label for="ProductPrice">Product Price</label>
+            <input
+              type="number"
+              id="ProductPrice"
+              placeholder="Enter Product Price"
+              class="ProductPrice"
+            />
+          </div>
+          <div class="col-md-4 d-flex flex-column">
+            <label for="ProductPrice">Product Descont</label>
+            <input
+              type="number"
+              id="ProductDescont"
+              placeholder="Enter Product Descont"
+              class="ProductDescont"
+            />
+          </div>
+          <div class="col-md-4 d-flex flex-column">
+            <label for="ProductPrice">Product Quantity</label>
+            <input
+              type="number"
+              id="ProductQuantity"
+              placeholder="Enter Product Quantity"
+              class="ProductQuantity"
+            />
+          </div>
+          <div class="col-md-12 d-flex flex-column">
+            <label for="ProductDescription">Product Description</label>
+            <textarea
+              name="ProductDescription"
+              id="ProductDescription"
+              cols="30"
+              rows="10"
+              placeholder="Enter Product Description"
+              class="ProductDescription"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-btn py-3">
+          <button type="button" class="btn btn-outline-success btnForm">
+            Add Product
+          </button>
+          <button type="button" class="btn btn-outline-info btn-update d-none">Update</button>
+        </div>
+      </div>
+      <div class="table-container">
+        <input type="text" id="search"  class="form-control bg-transparent my-2 text-white"placeholder="Search......." >
+        <table class="table my-table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Price</th>
+              <th scope="col">Descont</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Description</th>
+              <th scope="col">Update</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="sctipt.js"></script>
+  </body>
+</html>
