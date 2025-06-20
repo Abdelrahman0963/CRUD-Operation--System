@@ -170,4 +170,11 @@ textarea::-webkit-scrollbar-thumb {
     font-weight: 600;
     text-transform: uppercase;
   }
+  .my-table {
+    width: 100% !important;
+    overflow: auto;
+    display: block;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }
